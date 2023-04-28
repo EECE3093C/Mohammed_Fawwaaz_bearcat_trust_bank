@@ -3,6 +3,21 @@ class Account:
 
     # todo: Add the following methods:
     #       __init__
+    def __init__(self, account_number, account_holder_name, balance):
+        self.account_number = account_number
+        self.account_holder_name = account_holder_name
+        self.balance = balance
+
+    #       deposit
+    def deposit(amount):
+            balance = balance + amount
+            
+    #       withdraw
+    def withdraw(amount):
+        if amount<balance:
+            balance = balance - amount
+        else:
+            print("Error")
     #       deposit
     #       withdraw
      
