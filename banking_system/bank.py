@@ -1,4 +1,4 @@
-from banking_system import SavingsAccount, CheckingAccount
+from account import SavingsAccount, CheckingAccount, Account
 
 class Bank:
     """A class representing a bank with various account types."""
@@ -9,11 +9,11 @@ class Bank:
     # todo: Add the following method(s):
     #       create_account
     
-    def create_account(account_type, account_nunmber, acccount _holder_name, balance, interest_rate, overdraft_limit):
-        if account.account_type == "SavingsAccount":
-            return(SavingsAccount(account.Account()))
-        elif account.account_type == "CheckingAccount":
-            return(CheckingAccount(account.Account()))
+    def create_account(account_type, account_nunmber, acccount_holder_name, balance, interest_rate, overdraft_limit):
+        if account_type == "SavingsAccount":
+            return(SavingsAccount(Account()))
+        elif account_type == "CheckingAccount":
+            return(CheckingAccount(Account()))
         else:
             print("Invalid Account Type")
             return(0)
