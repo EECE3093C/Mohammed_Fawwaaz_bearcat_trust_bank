@@ -8,6 +8,15 @@ class Bank:
 
     # todo: Add the following method(s):
     #       create_account
+    
+    def create_account(account_type, account_nunmber, acccount _holder_name, balance, interest_rate, overdraft_limit):
+        if account.account_type == "SavingsAccount":
+            return(SavingsAccount(account.Account()))
+        elif account.account_type == "CheckingAccount":
+            return(CheckingAccount(account.Account()))
+        else:
+            print("Invalid Account Type")
+            return(0)
 
     def delete_account(self, account_number):
         """Deletes an account with the given account number.
