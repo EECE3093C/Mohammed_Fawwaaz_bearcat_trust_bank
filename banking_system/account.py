@@ -6,10 +6,10 @@ class Account:
         self.account_holder_name = account_holder_name
         self.balance = balance
 
-    def deposit(amount):
+    def deposit(self, amount):
             self.balance = self.balance + amount
             
-    def withdraw(amount):
+    def withdraw(self, amount):
         if amount<=self.balance:
             self.balance = self.balance - amount
         else:
