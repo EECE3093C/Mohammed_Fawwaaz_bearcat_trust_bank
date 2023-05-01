@@ -1,4 +1,4 @@
-from .account import SavingsAccount, CheckingAccount, Account
+from banking_system import SavingsAccount, CheckingAccount
 
 class Bank:
     """A class representing a bank with various account types."""
@@ -11,16 +11,13 @@ class Bank:
     
     def create_account(account_type, account_number, acccount_holder_name, balance, interest_rate, overdraft_limit):
         if account_type == "SavingsAccount":
-            interest_rate = kwargs["interest_rate"]
             account = SavingsAccount(account_number, account_holder_name, balance, interest_rate)
-            self.accounts.append(account)
         elif account_type == "CheckingAccount":
-            overdraft_limit = kwargs["overdraft_limit"]
             account = CheckingAccount(account_number, account_holder_name, balance, overdraft_limit)
-            self.accounts.append(account)
         else:
             print("Invalid Account Type")
             return(0)
+        self.accounts.append(account) 
 
     def delete_account(self, account_number):
         """Deletes an account with the given account number.
