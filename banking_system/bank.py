@@ -9,7 +9,7 @@ class Bank:
     # todo: Add the following method(s):
     #       create_account
     
-    def create_account(account_type, account_nunmber, acccount_holder_name, balance, interest_rate, overdraft_limit):
+    def create_account(account_type, account_number, acccount_holder_name, balance, interest_rate, overdraft_limit):
         if account_type == "SavingsAccount":
             interest_rate = kwargs["interest_rate"]
             account = SavingsAccount(account_number, account_holder_name, balance, interest_rate)
