@@ -7,11 +7,11 @@ class Account:
         self.balance = balance
 
     def deposit(self, amount):
-            self.balance = self.balance + amount
+            self.balance += amount
             
     def withdraw(self, amount):
         if amount<=self.balance:
-            self.balance = self.balance - amount
+            self.balance -= amount
         else:
             print("Error, insufficient funds")
      
