@@ -1,4 +1,4 @@
-from account import SavingsAccount, CheckingAccount, Account
+from .account import SavingsAccount, CheckingAccount, Account
 
 class Bank:
     """A class representing a bank with various account types."""
